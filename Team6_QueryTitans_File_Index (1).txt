@@ -1,0 +1,46 @@
+SQL HACKATHON 2026
+TEAM 6 - QUERY TITANS
+SQL FILE INDEX
+
+Project: COVID-19 in Multiple Sclerosis (COVID-19_MS)
+Database: PostgreSQL | pgAdmin 4
+
+FILES AND EXECUTION ORDER
+
+1. Team6_QueryTitans_DatabaseDesign&ETL.sql
+   Database Design & ETL
+   Cleans the imported raw data, creates the normalized tables, loads data,
+   and creates keys, constraints and indexes.
+   Prerequisite: Import the source CSV into public.covid_ms_raw first.
+
+2. Team6_QueryTitans_1_SimpleSelect.sql
+   Category 1 - Simple Select
+   Prerequisite: Database Design & ETL must complete successfully.
+
+3. Team6_QueryTitans_2_Intermediate.sql
+   Category 2 - Intermediate.
+   Includes creation of the v_covid_cohort view used by later questions.
+   Prerequisite: Database Design & ETL and Category 1 must be completed.
+
+4. Team6_QueryTitans_3_Advanced.sql
+   Category 3 - Advanced.
+   Prerequisite: Database Design & ETL, Category 1 and Category 2 must be completed.
+
+QUESTION NUMBERING
+Category 1: Q1-Q20
+Category 2: Q1-Q30
+Category 3: Q1-Q15
+
+EXECUTION NOTES
+- Run the files in the numbered order above, in the same project database.
+- Open each file in pgAdmin 4 using Query Tool.
+- Do not rerun Database Design & ETL unless you intend to rebuild the clean and normalized
+  tables. Rebuilding Database Design & ETL removes dependent views, functions and triggers;
+  rerun Categories 1-3 afterward.
+- Database Design & ETL uses temporary helper functions. Keep the Database Design & ETL statements in the
+  same Query Tool session while executing that file.
+- The Database Design & ETL file is an ETL/database setup script. It expects the raw CSV data
+  to have been imported into public.covid_ms_raw; it is not a standalone
+  backup/restore file.
+
+Team 6 | Query Titans
